@@ -1,0 +1,24 @@
+# 1. 환경 변수 및 설정 파일 (최우선 차단)
+.env
+.env.local
+.env.*.local
+config.json
+secret.yaml
+
+# 2. 클라우드 및 API 인증 키 (.pem, .json 등)
+*.pem
+*.pkcs12
+*.key
+credentials.json
+firebase-adminsdk.json
+
+# 3. 운영체제 및 시스템 임시 파일 (사용자 경로 노출 방지)
+.DS_Store
+Thumbs.db
+
+# 4. 데이터베이스 및 로그 파일 (실제 데이터 유출 방지)
+*.db
+*.sqlite
+*.log
+
+logs/
